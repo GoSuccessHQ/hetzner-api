@@ -165,7 +165,7 @@ final class SpecExample
     /**
      * The value below nested keys, or null.
      */
-    private static function at(mixed $value, string|int ...$keys): mixed
+    public static function at(mixed $value, string|int ...$keys): mixed
     {
         foreach ($keys as $key) {
             if (!\is_array($value) || !\array_key_exists($key, $value)) {
