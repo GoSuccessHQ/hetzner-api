@@ -12,6 +12,7 @@ use GoSuccess\Hetzner\Cloud\Resource\Locations;
 use GoSuccess\Hetzner\Cloud\Resource\Networks;
 use GoSuccess\Hetzner\Cloud\Resource\PlacementGroups;
 use GoSuccess\Hetzner\Cloud\Resource\Pricing;
+use GoSuccess\Hetzner\Cloud\Resource\Servers;
 use GoSuccess\Hetzner\Cloud\Resource\ServerTypes;
 use GoSuccess\Hetzner\Cloud\Resource\SshKeys;
 use GoSuccess\Hetzner\Http\Connection;
@@ -106,6 +107,14 @@ final class HetznerCloud
     public function pricing(): Pricing
     {
         return new Pricing($this->connection);
+    }
+
+    /**
+     * Servers (`/servers`).
+     */
+    public function servers(): Servers
+    {
+        return new Servers($this->connection);
     }
 
     /**

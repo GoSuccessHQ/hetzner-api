@@ -43,6 +43,28 @@ final class ExceptionTrace
      */
     public static function arguments(Throwable $e): string
     {
-        return (string) json_encode(array_map(static fn(array $frame): mixed => $frame['args'] ?? null, $e->getTrace()), \JSON_PARTIAL_OUTPUT_ON_ERROR);
+        return self::encode($e->getTrace());
+    }
+
+    /**
+     * The arguments of the package's own frames only (not of the tests or
+     * their doubles), as JSON.
+     */
+    public static function packageArguments(Throwable $e): string
+    {
+        $own = array_filter(
+            $e->getTrace(),
+            static fn(array $frame): bool => str_starts_with($frame['class'] ?? '', 'GoSuccess\\Hetzner\\') && !str_starts_with($frame['class'] ?? '', 'GoSuccess\\Hetzner\\Tests\\'),
+        );
+
+        return self::encode(array_values($own));
+    }
+
+    /**
+     * @param list<array<string, mixed>> $trace
+     */
+    private static function encode(array $trace): string
+    {
+        return (string) json_encode(array_map(static fn(array $frame): mixed => $frame['args'] ?? null, $trace), \JSON_PARTIAL_OUTPUT_ON_ERROR);
     }
 }
