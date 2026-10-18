@@ -159,6 +159,9 @@ final class Connection
      * Every entry of a list, page by page with {@see PER_PAGE} entries; ends when
      * `next_page` is null or does not grow.
      *
+     * @throws SerializationException after `ClientOptions::$maxPages` pages that all
+     *                                announced a next one
+     *
      * @template T
      *
      * @param array<string, string|int|list<string>>        $query
@@ -170,7 +173,7 @@ final class Connection
     {
         $page = 1;
 
-        while (true) {
+        for ($walked = 1; ; $walked++) {
             $result = $this->page($path, $itemsKey, [...$query, 'page' => $page, 'per_page' => self::PER_PAGE], $map);
 
             yield from $result->items;
@@ -179,6 +182,10 @@ final class Connection
 
             if ($next === null || $next <= $page) {
                 return;
+            }
+
+            if ($walked >= $this->options->maxPages) {
+                throw new SerializationException("GET {$path} announced more than {$this->options->maxPages} pages.");
             }
 
             $page = $next;
@@ -191,6 +198,14 @@ final class Connection
     public function lastRateLimit(): ?RateLimit
     {
         return $this->rateLimit;
+    }
+
+    /**
+     * The current Unix time of the connection's clock.
+     */
+    public function now(): float
+    {
+        return ($this->now)();
     }
 
     /**

@@ -33,8 +33,8 @@ final class Actions
     /**
      * Wait until an action is no longer running and return it, `success` or
      * `error` alike: the caller reads Hetzner's code and message from
-     * {@see Action::$error}. Polls every `$interval` seconds and never sleeps
-     * past `$timeout` in total.
+     * {@see Action::$error}. Polls every `$interval` seconds; `$timeout` is wall
+     * time, the requests included, and no poll starts that would end past it.
      *
      * @throws ActionTimeoutException if it is still running at the limit
      */
@@ -44,15 +44,14 @@ final class Actions
             throw new InvalidArgumentException('The interval must be positive and the timeout not negative.');
         }
 
-        $waited = 0.0;
+        $deadline = $this->connection->now() + $timeout;
 
         while ($action->status === ActionStatus::Running) {
-            if ($waited + $interval > $timeout) {
+            if ($this->connection->now() + $interval > $deadline) {
                 throw new ActionTimeoutException($action, $timeout);
             }
 
             $this->connection->sleep($interval);
-            $waited += $interval;
             $action = $this->get($action->id);
         }
 

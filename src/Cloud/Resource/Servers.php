@@ -43,11 +43,15 @@ final class Servers extends Listing
     {
         $data = $this->connection->request(Method::Post, self::PATH, body: $request->toJson());
 
+        // Out of the answer before anything else reads it, so a frame of a failed read never holds it.
+        $rootPassword = Json::nullableString($data, 'root_password', '');
+        unset($data['root_password']);
+
         return new CreatedServer(
             Server::fromJson(Json::object($data, 'server', ''), 'server'),
             Action::fromJson(Json::object($data, 'action', ''), 'action'),
             Action::listFrom($data, 'next_actions', ''),
-            Json::nullableString($data, 'root_password', ''),
+            $rootPassword,
         );
     }
 

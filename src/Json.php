@@ -88,6 +88,9 @@ final class Json
         $value = $data[$key] ?? null;
 
         if (\is_string($value)) {
+            // PHP reads at most six fractional digits; RFC 3339 allows more.
+            $value = (string) preg_replace('/(\.\d{6})\d+/', '$1', $value, 1);
+
             foreach (self::TIME_FORMATS as $format) {
                 $time = DateTimeImmutable::createFromFormat("!{$format}", $value);
                 $errors = DateTimeImmutable::getLastErrors();

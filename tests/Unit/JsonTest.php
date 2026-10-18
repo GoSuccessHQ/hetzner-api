@@ -91,6 +91,7 @@ final class JsonTest extends TestCase
         yield 'other offset' => ['2016-01-31T00:55:00+01:00', '2016-01-30T23:55:00.000000+00:00'];
         yield 'fraction' => ['2016-01-30T23:55:00.123456+00:00', '2016-01-30T23:55:00.123456+00:00'];
         yield 'fraction zulu' => ['2016-01-30T23:55:00.5Z', '2016-01-30T23:55:00.500000+00:00'];
+        yield 'nanoseconds' => ['2016-01-30T23:55:00.123456789Z', '2016-01-30T23:55:00.123456+00:00'];
     }
 
     public function testNullableTime(): void

@@ -93,6 +93,29 @@ final class ActionsTest extends TestCase
         self::assertSame(2, $http->callCount());
     }
 
+    public function testWaitCountsTheTimeOfTheRequestsToo(): void
+    {
+        $clock = 0.0;
+        $http = new MockHttpClient(...array_fill(0, 5, new Response(200, $this->json('running', 10))));
+        // Every poll takes three seconds.
+        $http->onSend = static function () use (&$clock): void {
+            $clock += 3.0;
+        };
+        $cloud = new HetznerCloud('token', new ClientOptions(maxRetries: 0), $http, static function (float $seconds) use (&$clock): void {
+            $clock += $seconds;
+        }, static function () use (&$clock): float {
+            return $clock;
+        });
+
+        $this->expectException(ActionTimeoutException::class);
+
+        try {
+            $cloud->actions()->wait($this->action(ActionStatus::Running), 5.0, 1.0);
+        } finally {
+            self::assertSame(2, $http->callCount());
+        }
+    }
+
     public function testWaitRefusesANonPositiveInterval(): void
     {
         [$cloud] = $this->cloud();
@@ -109,9 +132,10 @@ final class ActionsTest extends TestCase
     {
         $http = new MockHttpClient(...array_map(static fn(string $body): Response => new Response(200, $body), $bodies));
 
+        // A clock that only moves while sleeping: requests take no time here.
         return [new HetznerCloud('token', new ClientOptions(maxRetries: 0), $http, function (float $seconds): void {
             $this->sleeps[] = $seconds;
-        }), $http];
+        }, fn(): float => array_sum($this->sleeps)), $http];
     }
 
     private function action(ActionStatus $status): Action

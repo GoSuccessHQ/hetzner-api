@@ -73,7 +73,7 @@ when Hetzner answers 404 with `not_found`; another 404 (a proxy, or
 Changes return actions that finish later. `wait()` returns the action once it
 is no longer running, `success` or `error` alike (Hetzner's code and message in
 `$action->error`), and throws `ActionTimeoutException` when it is still running
-at your limit.
+at your limit, which is wall time including the polling requests.
 
 ## Errors and retries
 
@@ -90,8 +90,8 @@ the limit, what is left and when it resets.
 
 ## Configuration and custom transport
 
-`ClientOptions` sets timeouts (30 s), retries (2), backoff, user agent and the
-rate-limit retry. A custom transport implements `GoSuccess\Hetzner\Http\HttpClient`.
+`ClientOptions` sets timeouts (30 s), retries (2), backoff, user agent, the
+rate-limit retry and the most pages a list walk reads (100). A custom transport implements `GoSuccess\Hetzner\Http\HttpClient`.
 
 ## Tested against
 

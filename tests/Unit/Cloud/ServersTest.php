@@ -13,6 +13,7 @@ use GoSuccess\Hetzner\Cloud\Model\ServerProtection;
 use GoSuccess\Hetzner\Cloud\Resource\Servers;
 use GoSuccess\Hetzner\Exception\ApiException;
 use GoSuccess\Hetzner\Exception\NotFoundException;
+use GoSuccess\Hetzner\Exception\SerializationException;
 use GoSuccess\Hetzner\Exception\TransportException;
 use GoSuccess\Hetzner\Http\Response;
 use GoSuccess\Hetzner\Tests\Support\ExceptionTrace;
@@ -202,6 +203,19 @@ final class ServersTest extends TestCase
 
         self::assertInstanceOf(TransportException::class, $e);
         self::assertStringNotContainsString('bootstrap-secret', ExceptionTrace::packageArguments($e));
+    }
+
+    public function testRootPasswordStaysOutOfTraces(): void
+    {
+        $body = SpecExample::with(SpecExample::response('create_server'), 'server', null);
+        $body = SpecExample::with($body, 'root_password', 'TOPSECRETPW');
+        $http = new MockHttpClient(new Response(201, (string) json_encode($body)));
+        $cloud = new HetznerCloud('token', new ClientOptions(maxRetries: 0), $http, static function (float $seconds): void {});
+
+        $e = ExceptionTrace::capture(static fn(): CreatedServer => $cloud->servers()->create(new CreateServer('gs-test', 'cx23', 'ubuntu-24.04')));
+
+        self::assertInstanceOf(SerializationException::class, $e);
+        self::assertStringNotContainsString('TOPSECRETPW', ExceptionTrace::arguments($e));
     }
 
     public function testDeleteReturnsTrue(): void

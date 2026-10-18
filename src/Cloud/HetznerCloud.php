@@ -37,6 +37,7 @@ final class HetznerCloud
      * @param HttpClient|null             $httpClient Transport; defaults to {@see CurlHttpClient}.
      * @param (Closure(float): void)|null $sleep      Waits between retries and while polling actions;
      *                                                replaceable for tests.
+     * @param (Closure(): float)|null     $now        The current Unix time; replaceable for tests.
      */
     public function __construct(
         #[SensitiveParameter]
@@ -44,6 +45,7 @@ final class HetznerCloud
         ClientOptions $options = new ClientOptions(),
         ?HttpClient $httpClient = null,
         ?Closure $sleep = null,
+        ?Closure $now = null,
     ) {
         $this->connection = new Connection(
             self::BASE_URL,
@@ -51,6 +53,7 @@ final class HetznerCloud
             $options,
             $httpClient ?? new CurlHttpClient($options->timeout, $options->connectTimeout),
             $sleep,
+            $now,
         );
     }
 

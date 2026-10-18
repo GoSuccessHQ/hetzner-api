@@ -46,6 +46,21 @@ final class PaginationTest extends TestCase
         self::assertSame(2, $http->callCount());
     }
 
+    public function testEndlessNextPageStopsAtTheLimit(): void
+    {
+        $http = new MockHttpClient($this->page([1], 1, 2), $this->page([2], 2, 3), $this->page([3], 3, 4), $this->page([4], 4, 5));
+        $connection = new Connection('https://api.hetzner.cloud/v1', 'token', new ClientOptions(maxPages: 3), $http, static function (float $seconds): void {});
+
+        try {
+            iterator_to_array($connection->pages('/servers', 'servers', [], static fn(array $item): mixed => $item['id']), false);
+            self::fail('No exception.');
+        } catch (SerializationException $e) {
+            self::assertStringContainsString('more than 3 pages', $e->getMessage());
+        }
+
+        self::assertSame(3, $http->callCount());
+    }
+
     public function testEmptyList(): void
     {
         $http = new MockHttpClient($this->page([], 1, null));

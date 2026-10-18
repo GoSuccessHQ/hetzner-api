@@ -36,8 +36,11 @@ try {
     exit(1);
 }
 
-$action = $cloud->actions()->wait($created->action, timeout: 300.0);
-printf("Server %d: %s\n", $created->server->id, $action->status === ActionStatus::Success ? 'created' : "failed ({$action->error?->code})");
-
-$cloud->servers()->delete($created->server->id);
-echo "Deleted.\n";
+try {
+    $action = $cloud->actions()->wait($created->action, timeout: 300.0);
+    printf("Server %d: %s\n", $created->server->id, $action->status === ActionStatus::Success ? 'created' : "failed ({$action->error?->code})");
+} finally {
+    // Also after a timeout: the server costs money as long as it exists.
+    $cloud->servers()->delete($created->server->id);
+    echo "Deleted.\n";
+}

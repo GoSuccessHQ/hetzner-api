@@ -36,7 +36,9 @@ foreach ($cloud->servers()->all(['label_selector' => 'managed-by=gosuccess-contr
 ```
 
 The walk ends when `next_page` is null or does not grow, so a server that
-repeats a page cannot loop it.
+repeats a page cannot loop it; one that keeps announcing new pages raises
+`SerializationException` after `ClientOptions::$maxPages` pages (100, i.e.
+5,000 entries).
 
 ## Single reads and deletes
 
@@ -50,8 +52,9 @@ gone) raises `NotFoundException`: it is no proof that the resource is gone.
 
 Most changes return actions that finish later. `wait()` polls until the action
 is no longer running and returns it, `success` or `error` alike; Hetzner's code
-and message are in `$action->error`. It never sleeps past the limit and throws
-`ActionTimeoutException` (with the last state in `$action`) instead.
+and message are in `$action->error`. The limit is wall time, the polling
+requests included; no poll starts that would end past it, and
+`ActionTimeoutException` (with the last state in `$action`) comes instead.
 
 ```php
 $action = $cloud->actions()->wait($cloud->servers()->enableBackup($id), timeout: 120.0);

@@ -21,12 +21,13 @@ final class ClientOptionsTest extends TestCase
         self::assertSame(2, $options->maxRetries);
         self::assertSame(0.5, $options->retryBaseDelay);
         self::assertTrue($options->retryOnRateLimit);
+        self::assertSame(100, $options->maxPages);
         self::assertSame(10.0, $options->maxRetryDelay);
         self::assertSame('gosuccess/hetzner-api (+https://github.com/GoSuccessHQ/hetzner-api)', $options->userAgent);
     }
 
     /**
-     * @param array{timeout?: float, connectTimeout?: float, maxRetries?: int, retryBaseDelay?: float, maxRetryDelay?: float, userAgent?: string} $arguments
+     * @param array{timeout?: float, connectTimeout?: float, maxRetries?: int, retryBaseDelay?: float, maxRetryDelay?: float, userAgent?: string, maxPages?: int} $arguments
      */
     #[DataProvider('invalidOptions')]
     public function testRejectsInvalidValues(array $arguments): void
@@ -37,7 +38,7 @@ final class ClientOptionsTest extends TestCase
     }
 
     /**
-     * @return iterable<string, array{array{timeout?: float, connectTimeout?: float, maxRetries?: int, retryBaseDelay?: float, maxRetryDelay?: float, userAgent?: string}}>
+     * @return iterable<string, array{array{timeout?: float, connectTimeout?: float, maxRetries?: int, retryBaseDelay?: float, maxRetryDelay?: float, userAgent?: string, maxPages?: int}}>
      */
     public static function invalidOptions(): iterable
     {
@@ -45,6 +46,7 @@ final class ClientOptionsTest extends TestCase
         yield 'endless timeout' => [['timeout' => \INF]];
         yield 'negative connect timeout' => [['connectTimeout' => -1.0]];
         yield 'negative retries' => [['maxRetries' => -1]];
+        yield 'no pages' => [['maxPages' => 0]];
         yield 'negative base delay' => [['retryBaseDelay' => -0.5]];
         yield 'undefined base delay' => [['retryBaseDelay' => \NAN]];
         yield 'negative max delay' => [['maxRetryDelay' => -0.5]];

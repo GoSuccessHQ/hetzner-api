@@ -34,6 +34,8 @@ final readonly class ClientOptions
      * @param bool   $retryOnRateLimit Wait for `RateLimit-Reset` (at most `maxRetryDelay`)
      *                                 and retry a `429`, for every method, since Hetzner did
      *                                 not run the request. Off, a `429` throws at once.
+     * @param int    $maxPages         Upper bound of pages when walking a whole list (50 entries
+     *                                 each), so a wrong `next_page` never makes an endless walk.
      */
     public function __construct(
         public float $timeout = 30.0,
@@ -43,12 +45,17 @@ final readonly class ClientOptions
         public float $maxRetryDelay = 10.0,
         public string $userAgent = self::DEFAULT_USER_AGENT,
         public bool $retryOnRateLimit = true,
+        public int $maxPages = 100,
     ) {
         foreach (['timeout' => $timeout, 'connectTimeout' => $connectTimeout, 'retryBaseDelay' => $retryBaseDelay, 'maxRetryDelay' => $maxRetryDelay] as $name => $value) {
             // NAN and INF would turn into warnings or endless waits once converted for cURL or sleep().
             if (!is_finite($value) || $value < 0.0) {
                 throw new InvalidArgumentException("{$name} must be a finite number that is not negative.");
             }
+        }
+
+        if ($maxPages < 1) {
+            throw new InvalidArgumentException('maxPages must be at least 1.');
         }
 
         if ($maxRetries < 0) {
