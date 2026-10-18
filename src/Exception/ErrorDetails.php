@@ -16,9 +16,13 @@ final readonly class ErrorDetails
 {
     private const int MAX_MESSAGE_BYTES = 500;
 
+    /**
+     * @param array<string, list<string>> $fields
+     */
     private function __construct(
         public ?string $message,
         public ?string $errorCode,
+        public array $fields = [],
     ) {}
 
     public static function parse(string $body): self
@@ -42,7 +46,32 @@ final readonly class ErrorDetails
 
         $message = self::text($error['message'] ?? null);
 
-        return new self($message === null ? null : self::excerpt($message), self::text($error['code'] ?? null));
+        return new self($message === null ? null : self::excerpt($message), self::text($error['code'] ?? null), self::fields($error['details'] ?? null));
+    }
+
+    /**
+     * The messages per field of `details.fields`, as `invalid_input` sends them;
+     * entries without a name are skipped.
+     *
+     * @return array<string, list<string>>
+     */
+    private static function fields(mixed $details): array
+    {
+        $entries = \is_array($details) && \is_array($details['fields'] ?? null) ? $details['fields'] : [];
+        $fields = [];
+
+        foreach ($entries as $entry) {
+            $name = \is_array($entry) ? self::text($entry['name'] ?? null) : null;
+
+            if ($name === null) {
+                continue;
+            }
+
+            $messages = \is_array($entry['messages'] ?? null) ? $entry['messages'] : [];
+            $fields[$name] = array_values(array_filter($messages, \is_string(...)));
+        }
+
+        return $fields;
     }
 
     private static function text(mixed $value): ?string

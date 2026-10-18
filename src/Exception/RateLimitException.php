@@ -11,9 +11,10 @@ use GoSuccess\Hetzner\Http\Response;
 /**
  * The request was rejected because the rate limit was exceeded (HTTP 429).
  *
- * The client never retries a `429`: the feed is one large download, and the
- * caller decides when to try again. {@see $retryAfter} holds the number of
- * seconds to wait, when the API announced it.
+ * The client waits and retries a `429` unless `ClientOptions::$retryOnRateLimit`
+ * is off; this exception comes after the last retry or at once.
+ * {@see $retryAfter} holds the number of seconds to wait, when the API announced
+ * it.
  */
 final class RateLimitException extends ApiException
 {
@@ -24,17 +25,20 @@ final class RateLimitException extends ApiException
     private const array HTTP_DATE_FORMATS = ['D, d M Y H:i:s \\G\\M\\T', 'l, d-M-y H:i:s \\G\\M\\T', 'D M j H:i:s Y'];
 
     /**
-     * @param int|null $retryAfter Seconds until the API accepts requests again, from
-     *                             `Retry-After`.
+     * @param array<string, list<string>> $fields
+     * @param int|null                    $retryAfter Seconds until the API accepts requests
+     *                                                again, from `Retry-After` or else
+     *                                                `RateLimit-Reset`.
      */
     public function __construct(
         string $message,
         int $statusCode,
         string $responseBody = '',
         ?string $errorCode = null,
+        array $fields = [],
         public readonly ?int $retryAfter = null,
     ) {
-        parent::__construct($message, $statusCode, $responseBody, $errorCode);
+        parent::__construct($message, $statusCode, $responseBody, $errorCode, $fields);
     }
 
     /**
@@ -73,7 +77,9 @@ final class RateLimitException extends ApiException
 
     /**
      * How long the API asked to wait after a response, in seconds: the
-     * `Retry-After` header if it is valid (see {@see parseRetryAfter()}).
+     * `Retry-After` header if it is valid (see {@see parseRetryAfter()}), else
+     * the time until `RateLimit-Reset` (a Unix time, which the Cloud API sends
+     * instead); a reset in the past means no wait.
      *
      * @internal
      *
@@ -83,7 +89,17 @@ final class RateLimitException extends ApiException
     {
         $retryAfter = self::parseRetryAfter($response->header('retry-after'), $now);
 
-        return $retryAfter === null ? null : (float) $retryAfter;
+        if ($retryAfter !== null) {
+            return (float) $retryAfter;
+        }
+
+        $reset = trim($response->header('ratelimit-reset'));
+
+        if (preg_match('/^\d{1,12}$/D', $reset) !== 1) {
+            return null;
+        }
+
+        return max(0.0, (float) $reset - $now);
     }
 
     /**

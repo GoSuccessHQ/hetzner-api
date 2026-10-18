@@ -10,8 +10,8 @@ use RuntimeException;
 use SensitiveParameter;
 
 /**
- * Base class for all errors the services report as an HTTP error
- * status.
+ * Base class for all errors the API reports as an HTTP error status (also a
+ * redirect, which the client never follows).
  *
  * The API's error message and code are normalized into the exception message
  * and {@see $errorCode}, while the raw body stays available in
@@ -25,12 +25,15 @@ class ApiException extends RuntimeException implements HetznerException
      * @param string|null $errorCode    Hetzner's `error.code`, e.g. `not_found`,
      *                                  `invalid_input` or `locked`; null when the body
      *                                  has no error envelope (e.g. a proxy's page).
+     * @param array<string, list<string>> $fields The messages per field of an
+     *                                  `invalid_input` error (`details.fields`).
      */
     public function __construct(
         string $message,
         public readonly int $statusCode,
         public readonly string $responseBody = '',
         public readonly ?string $errorCode = null,
+        public readonly array $fields = [],
     ) {
         parent::__construct($message, $statusCode);
     }
@@ -68,7 +71,7 @@ class ApiException extends RuntimeException implements HetznerException
             $message .= " ({$details->errorCode})";
         }
 
-        $arguments = [$message, $status, $body, $details->errorCode];
+        $arguments = [$message, $status, $body, $details->errorCode, $details->fields];
 
         return match (true) {
             $status === 400 => new BadRequestException(...$arguments),
