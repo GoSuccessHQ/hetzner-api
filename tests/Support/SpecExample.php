@@ -139,6 +139,30 @@ final class SpecExample
     }
 
     /**
+     * A copy of `$data` without the key at a dotted path, for optional fields.
+     *
+     * @param array<array-key, mixed> $data
+     *
+     * @return array<array-key, mixed>
+     */
+    public static function without(array $data, string $path): array
+    {
+        $keys = explode('.', $path);
+        $key = array_shift($keys);
+
+        if ($keys === []) {
+            unset($data[$key]);
+
+            return $data;
+        }
+
+        $inner = $data[$key] ?? null;
+        $data[$key] = self::without(\is_array($inner) ? $inner : [], implode('.', $keys));
+
+        return $data;
+    }
+
+    /**
      * The value below nested keys, or null.
      */
     private static function at(mixed $value, string|int ...$keys): mixed

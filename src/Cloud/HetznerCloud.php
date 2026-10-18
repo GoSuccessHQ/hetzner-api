@@ -7,6 +7,7 @@ namespace GoSuccess\Hetzner\Cloud;
 use Closure;
 use GoSuccess\Hetzner\ClientOptions;
 use GoSuccess\Hetzner\Cloud\Resource\Actions;
+use GoSuccess\Hetzner\Cloud\Resource\Firewalls;
 use GoSuccess\Hetzner\Cloud\Resource\Images;
 use GoSuccess\Hetzner\Cloud\Resource\Locations;
 use GoSuccess\Hetzner\Cloud\Resource\Networks;
@@ -115,6 +116,14 @@ final class HetznerCloud
     public function servers(): Servers
     {
         return new Servers($this->connection);
+    }
+
+    /**
+     * Firewalls (`/firewalls`).
+     */
+    public function firewalls(): Firewalls
+    {
+        return new Firewalls($this->connection);
     }
 
     /**
