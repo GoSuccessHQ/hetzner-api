@@ -1,0 +1,17 @@
+# Normalize line endings.
+* text=auto eol=lf
+
+# Exclude development-only files from the Composer (dist) package.
+/.github           export-ignore
+/docs              export-ignore
+/examples          export-ignore
+/resources         export-ignore
+/tests             export-ignore
+/tools             export-ignore
+/.gitattributes    export-ignore
+/.gitignore        export-ignore
+/composer.lock     export-ignore
+/.php-cs-fixer.php export-ignore
+/phpstan.neon      export-ignore
+/phpunit.xml       export-ignore
+/resources/specs  export-ignore

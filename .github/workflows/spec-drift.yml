@@ -1,0 +1,33 @@
+name: Spec drift
+
+on:
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+jobs:
+  drift:
+    name: The Cloud API specification is unchanged
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Fetch the specifications
+        run: composer specs
+
+      - name: Fail if a snapshot changed
+        run: |
+          if ! git diff --exit-code resources/specs; then
+            echo "::error::The Cloud API specification changed. Review the diff, update the models and SpecTest, and commit the snapshot."
+            exit 1
+          fi
