@@ -149,6 +149,20 @@ final class CatalogTest extends TestCase
         self::assertSame([42], $network->servers);
     }
 
+    /**
+     * Measured 2026-10-19: `"labels": null` for a placement group without labels.
+     */
+    public function testReadsPlacementGroupsWithoutLabels(): void
+    {
+        $example = (string) preg_replace('/"labels":\s*\{[^}]*\}/', '"labels": null', SpecExample::json('list_placement_groups'), 1);
+        self::assertStringContainsString('"labels": null', $example);
+        [$cloud] = $this->cloud($example);
+
+        $group = iterator_to_array($cloud->placementGroups()->all(), false)[0];
+
+        self::assertSame([], $group->labels);
+    }
+
     public function testPlacementGroups(): void
     {
         [$cloud] = $this->cloud(SpecExample::json('list_placement_groups'));

@@ -103,6 +103,11 @@ test server's label and refused as `resource_in_use` while it covered the
 server, removed and deleted. A firewall whose selector matches no server can be
 deleted while applied.
 
+Where the live API differs from its specification, the client follows the live
+API: a placement group created without labels comes back with
+`"labels": null` instead of an object (measured 2026-10-19); labels that are
+`null` are read as none.
+
 ## Not covered yet
 
 The rest of the Cloud API (certificates, floating and primary IPs, load

@@ -193,7 +193,9 @@ final class Json
     }
 
     /**
-     * Labels: an object of strings.
+     * Labels: an object of strings. `null` means none: Hetzner returns it for a
+     * placement group created without labels (measured 2026-10-19), although the
+     * spec says object.
      *
      * @param array<array-key, mixed> $data
      *
@@ -202,6 +204,10 @@ final class Json
     public static function labels(array $data, string|int $key, string $path): array
     {
         $labels = [];
+
+        if (\array_key_exists($key, $data) && $data[$key] === null) {
+            return $labels;
+        }
 
         foreach (self::object($data, $key, $path) as $name => $value) {
             $labels[(string) $name] = self::string([$name => $value], (string) $name, self::join($path, $key));

@@ -41,6 +41,15 @@ final class JsonTest extends TestCase
     }
 
     /**
+     * Measured 2026-10-19 in the test project: a placement group created without
+     * labels comes back with `"labels": null`, although the spec says object.
+     */
+    public function testReadsNullLabelsAsNone(): void
+    {
+        self::assertSame([], Json::labels(['labels' => null], 'labels', 'placement_groups[0]'));
+    }
+
+    /**
      * @param array<string, mixed> $data
      */
     #[DataProvider('wrongValues')]
