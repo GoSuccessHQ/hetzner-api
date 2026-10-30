@@ -280,6 +280,35 @@ final class ServersTest extends TestCase
         self::assertSame('{"delete":true,"rebuild":false}', $http->requests[0]->body);
     }
 
+    public function testPowerActions(): void
+    {
+        [$cloud, $http] = $this->cloud(
+            new Response(201, SpecExample::json('shutdown_server')),
+            new Response(201, SpecExample::json('poweroff_server')),
+            new Response(201, SpecExample::json('poweron_server')),
+        );
+
+        $cloud->servers()->shutdown(42);
+        $cloud->servers()->powerOff(42);
+        $action = $cloud->servers()->powerOn(42);
+
+        self::assertSame(
+            ['https://api.hetzner.cloud/v1/servers/42/actions/shutdown', 'https://api.hetzner.cloud/v1/servers/42/actions/poweroff', 'https://api.hetzner.cloud/v1/servers/42/actions/poweron'],
+            array_map(static fn($request): string => $request->uri, $http->requests),
+        );
+        self::assertSame(42, $action->id);
+    }
+
+    public function testChangeTypeSendsTypeAndDiskChoice(): void
+    {
+        [$cloud, $http] = $this->cloud(new Response(201, SpecExample::json('change_server_type')));
+
+        $cloud->servers()->changeType(42, 'cpx31', upgradeDisk: false);
+
+        self::assertSame('https://api.hetzner.cloud/v1/servers/42/actions/change_type', $http->requests[0]->uri);
+        self::assertSame('{"server_type":"cpx31","upgrade_disk":false}', $http->requests[0]->body);
+    }
+
     /**
      * @return array{HetznerCloud, MockHttpClient}
      */

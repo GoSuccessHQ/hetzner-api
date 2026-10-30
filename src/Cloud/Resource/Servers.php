@@ -101,6 +101,42 @@ final class Servers extends Listing
         return $this->action($id, 'change_protection', ['delete' => $delete, 'rebuild' => $rebuild]);
     }
 
+    /**
+     * Ask the operating system to shut down (ACPI). The server may ignore it;
+     * use powerOff() after a timeout.
+     */
+    public function shutdown(int $id): Action
+    {
+        return $this->action($id, 'shutdown', null);
+    }
+
+    /**
+     * Cut the power, like pulling the plug. Data not yet written may be lost.
+     */
+    public function powerOff(int $id): Action
+    {
+        return $this->action($id, 'poweroff', null);
+    }
+
+    /**
+     * Start a stopped server.
+     */
+    public function powerOn(int $id): Action
+    {
+        return $this->action($id, 'poweron', null);
+    }
+
+    /**
+     * Change the server type (cores, memory, disk). The server must be off.
+     * Only to types with the same storage type and an equal or bigger disk;
+     * with $upgradeDisk false the disk stays, so a later downgrade remains
+     * possible.
+     */
+    public function changeType(int $id, string $serverType, bool $upgradeDisk): Action
+    {
+        return $this->action($id, 'change_type', ['server_type' => $serverType, 'upgrade_disk' => $upgradeDisk]);
+    }
+
     protected function map(array $data, string $path): Server
     {
         return Server::fromJson($data, $path);
