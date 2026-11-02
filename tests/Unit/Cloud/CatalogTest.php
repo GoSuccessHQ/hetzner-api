@@ -136,6 +136,16 @@ final class CatalogTest extends TestCase
         self::assertSame('24.04', $image->osVersion);
         self::assertSame(['environment' => 'prod', 'example.com/my' => 'label', 'just-a-key' => ''], $image->labels);
         self::assertSame('available', $image->status);
+        self::assertEquals(new Deprecation(new DateTimeImmutable('2023-06-01T00:00:00Z'), new DateTimeImmutable('2023-09-01T00:00:00Z')), $image->deprecation);
+    }
+
+    public function testImageWithoutDeprecation(): void
+    {
+        [$cloud] = $this->cloud((string) json_encode(SpecExample::with(SpecExample::response('list_images'), 'images.0.deprecation', null)));
+
+        $image = iterator_to_array($cloud->images()->all(), false)[0];
+
+        self::assertNull($image->deprecation);
     }
 
     public function testNetworksWithSubnets(): void

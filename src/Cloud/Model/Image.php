@@ -28,7 +28,7 @@ final readonly class Image
         public string $osFlavor,
         public ?string $osVersion,
         public string $architecture,
-        public ?DateTimeImmutable $deprecated,
+        public ?Deprecation $deprecation,
         public array $labels,
         public DateTimeImmutable $created,
     ) {}
@@ -49,7 +49,7 @@ final readonly class Image
             Json::string($data, 'os_flavor', $path),
             Json::nullableString($data, 'os_version', $path),
             Json::string($data, 'architecture', $path),
-            Json::nullableTime($data, 'deprecated', $path),
+            Deprecation::fromNullable($data, 'deprecation', $path),
             Json::labels($data, 'labels', $path),
             Json::time($data, 'created', $path),
         );

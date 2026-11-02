@@ -70,7 +70,8 @@ final class SpecTest extends TestCase
 
     private const array IMAGE = [
         'id' => 'R', 'type' => 'R', 'status' => 'R', 'name' => 'N', 'description' => 'R', 'os_flavor' => 'R', 'os_version' => 'N',
-        'architecture' => 'R', 'deprecated' => 'N', 'labels' => 'R', 'created' => 'R',
+        'architecture' => 'R', 'deprecation' => 'N', 'deprecation.announced' => 'R', 'deprecation.unavailable_after' => 'R',
+        'labels' => 'R', 'created' => 'R',
     ];
 
     private const array NETWORK = [
