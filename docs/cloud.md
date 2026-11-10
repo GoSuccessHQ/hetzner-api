@@ -60,9 +60,10 @@ requests included; no poll starts that would end past it, and
 $action = $cloud->actions()->wait($cloud->servers()->enableBackup($id), timeout: 120.0);
 ```
 
-Server actions: `enableBackup`, `changeProtection`, `shutdown` (ACPI, the
-system may ignore it), `powerOff`, `powerOn` and `changeType($id, $type,
-$upgradeDisk)`. A type change needs a stopped server and a type with the same
+Server actions: `enableBackup`, `disableBackup` (Hetzner deletes the
+existing backups with it), `changeProtection`, `shutdown` (ACPI, the system
+may ignore it), `powerOff`, `powerOn`, `reset` (hard reset, for a system that
+no longer answers) and `changeType($id, $type, $upgradeDisk)`. A type change needs a stopped server and a type with the same
 `storage_type` and an equal or bigger disk; with `$upgradeDisk` false the disk
 keeps its size, so the type can be downgraded later.
 

@@ -270,6 +270,17 @@ final class ServersTest extends TestCase
         self::assertSame(42, $action->id);
     }
 
+    public function testDisableBackup(): void
+    {
+        [$cloud, $http] = $this->cloud(new Response(201, SpecExample::json('disable_server_backup')));
+
+        $action = $cloud->servers()->disableBackup(42);
+
+        self::assertSame('https://api.hetzner.cloud/v1/servers/42/actions/disable_backup', $http->requests[0]->uri);
+        self::assertSame('POST', $http->requests[0]->method->value);
+        self::assertSame(42, $action->id);
+    }
+
     public function testChangeProtectionSendsBothFlags(): void
     {
         [$cloud, $http] = $this->cloud(new Response(201, SpecExample::json('change_server_protection')));
@@ -286,14 +297,16 @@ final class ServersTest extends TestCase
             new Response(201, SpecExample::json('shutdown_server')),
             new Response(201, SpecExample::json('poweroff_server')),
             new Response(201, SpecExample::json('poweron_server')),
+            new Response(201, SpecExample::json('reset_server')),
         );
 
         $cloud->servers()->shutdown(42);
         $cloud->servers()->powerOff(42);
-        $action = $cloud->servers()->powerOn(42);
+        $cloud->servers()->powerOn(42);
+        $action = $cloud->servers()->reset(42);
 
         self::assertSame(
-            ['https://api.hetzner.cloud/v1/servers/42/actions/shutdown', 'https://api.hetzner.cloud/v1/servers/42/actions/poweroff', 'https://api.hetzner.cloud/v1/servers/42/actions/poweron'],
+            ['https://api.hetzner.cloud/v1/servers/42/actions/shutdown', 'https://api.hetzner.cloud/v1/servers/42/actions/poweroff', 'https://api.hetzner.cloud/v1/servers/42/actions/poweron', 'https://api.hetzner.cloud/v1/servers/42/actions/reset'],
             array_map(static fn($request): string => $request->uri, $http->requests),
         );
         self::assertSame(42, $action->id);

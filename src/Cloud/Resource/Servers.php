@@ -94,6 +94,15 @@ final class Servers extends Listing
     }
 
     /**
+     * Turn off the daily backups; Hetzner deletes the existing backups of the
+     * server with it.
+     */
+    public function disableBackup(int $id): Action
+    {
+        return $this->action($id, 'disable_backup', null);
+    }
+
+    /**
      * Protect against deletion and rebuilding, or lift it.
      */
     public function changeProtection(int $id, bool $delete, bool $rebuild): Action
@@ -116,6 +125,15 @@ final class Servers extends Listing
     public function powerOff(int $id): Action
     {
         return $this->action($id, 'poweroff', null);
+    }
+
+    /**
+     * Hard reset, like pressing the reset button. Data not yet written may be
+     * lost; use it when the operating system no longer answers.
+     */
+    public function reset(int $id): Action
+    {
+        return $this->action($id, 'reset', null);
     }
 
     /**
