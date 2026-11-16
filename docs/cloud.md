@@ -18,7 +18,7 @@ $cloud = new HetznerCloud($token);
 | `placementGroups()` | `list_placement_groups` |
 | `sshKeys()` | `list_ssh_keys` |
 | `pricing()` | `get_pricing` |
-| `servers()` | `list_servers`, `get_server`, `create_server`, `update_server` (labels), `delete_server`, `enable_server_backup`, `change_server_protection` |
+| `servers()` | `list_servers`, `get_server`, `create_server`, `update_server` (labels), `delete_server`, `enable_server_backup`, `disable_server_backup`, `change_server_protection`, `shutdown_server`, `poweroff_server`, `poweron_server`, `reset_server`, `change_server_type` |
 | `firewalls()` | `list_firewalls`, `get_firewall`, `create_firewall`, `set_firewall_rules`, `apply_firewall_to_resources`, `remove_firewall_from_resources`, `delete_firewall` |
 | `actions()` | `get_action`, and `wait()` |
 

@@ -19,10 +19,10 @@ fails when the snapshot changes.
 ## Cloud API
 
 - Certificates, Floating IPs, Primary IPs, Load Balancers and their types,
-  Volumes, ISOs, Data Centers.
+  Volumes, ISOs. (Data Centers were removed by Hetzner on 2026-10-01.)
 - Zones and RRSets (DNS).
-- Servers: power actions, rebuild, rescue, resize, ISO, metrics, the remaining
-  actions, attaching networks, placement groups and volumes, changing the name.
+- Servers: reboot, rebuild, rescue, ISO, metrics, the remaining actions,
+  attaching networks, placement groups and volumes, changing the name.
 - Images: update, delete, actions.
 - Networks, placement groups, SSH keys: create, update, delete; network actions.
 - Firewalls: update; the actions list of a firewall.
