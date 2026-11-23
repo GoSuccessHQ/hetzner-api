@@ -7,7 +7,7 @@ namespace GoSuccess\Hetzner\Cloud\Resource;
 use GoSuccess\Hetzner\Cloud\Model\ServerType;
 
 /**
- * The server types (`GET /server_types`); filter `name`.
+ * The server types (`GET /server_types`); filters `name`, `sort`.
  *
  * @extends Listing<ServerType>
  */
