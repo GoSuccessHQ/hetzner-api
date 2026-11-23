@@ -286,7 +286,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -332,7 +332,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -542,7 +542,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -588,7 +588,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -1064,7 +1064,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -1110,7 +1110,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -1661,7 +1661,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -1707,7 +1707,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -2099,7 +2099,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -2145,7 +2145,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -2360,7 +2360,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -2406,7 +2406,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -2718,7 +2718,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -2764,7 +2764,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -3109,7 +3109,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -3155,7 +3155,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -3252,7 +3252,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -3298,7 +3298,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -3708,7 +3708,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -3754,7 +3754,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -3982,7 +3982,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -4028,7 +4028,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -4287,7 +4287,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -4333,7 +4333,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -4710,7 +4710,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -4756,7 +4756,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -5019,7 +5019,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -5065,7 +5065,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -5522,7 +5522,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -5568,7 +5568,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -6222,7 +6222,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -6268,7 +6268,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -6645,7 +6645,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -6691,7 +6691,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -6906,7 +6906,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -6952,7 +6952,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -7270,7 +7270,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -7316,7 +7316,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -7670,7 +7670,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -7716,7 +7716,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -7813,7 +7813,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -7859,7 +7859,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -8269,7 +8269,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -8315,7 +8315,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -8634,7 +8634,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -8680,7 +8680,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -9016,7 +9016,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -9062,7 +9062,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -9438,7 +9438,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -9484,7 +9484,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -9743,7 +9743,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -9789,7 +9789,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -10204,7 +10204,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -10250,7 +10250,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -10782,7 +10782,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -10828,7 +10828,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -11205,7 +11205,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -11251,7 +11251,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -11466,7 +11466,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -11512,7 +11512,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -11808,7 +11808,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -11854,7 +11854,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -12232,7 +12232,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -12278,7 +12278,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -12375,7 +12375,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -12421,7 +12421,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -12835,7 +12835,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -12881,7 +12881,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -13139,7 +13139,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -13185,7 +13185,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -13461,7 +13461,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -13507,7 +13507,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -13774,7 +13774,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -13820,7 +13820,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -14069,7 +14069,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -14115,7 +14115,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -14378,7 +14378,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -14424,7 +14424,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -14942,7 +14942,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -14988,7 +14988,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -15365,7 +15365,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -15411,7 +15411,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -15626,7 +15626,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -15672,7 +15672,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -15990,7 +15990,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -16036,7 +16036,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -16427,7 +16427,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -16473,7 +16473,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -16570,7 +16570,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -16616,7 +16616,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -17026,7 +17026,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -17072,7 +17072,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -17317,7 +17317,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -17363,7 +17363,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -17622,7 +17622,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -17668,7 +17668,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -17789,6 +17789,26 @@
                             "minimum": 1,
                             "maximum": 50,
                             "example": 25
+                        }
+                    },
+                    {
+                        "description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"[Sorting](#description/sorting)\".\n",
+                        "name": "sort",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "id",
+                                    "id:asc",
+                                    "id:desc",
+                                    "name",
+                                    "name:asc",
+                                    "name:desc"
+                                ]
+                            }
                         }
                     }
                 ],
@@ -17971,7 +17991,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -18017,7 +18037,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -18211,7 +18231,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -18257,7 +18277,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -18645,7 +18665,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -18691,7 +18711,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -18977,7 +18997,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -19023,7 +19043,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -20720,7 +20740,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -20766,7 +20786,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -23390,7 +23410,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -23436,7 +23456,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -23813,7 +23833,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -23859,7 +23879,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -24074,7 +24094,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -24120,7 +24140,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -25678,7 +25698,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -25724,7 +25744,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -27471,7 +27491,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -27517,7 +27537,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -27734,7 +27754,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -27780,7 +27800,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -28190,7 +28210,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -28236,7 +28256,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -28676,7 +28696,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -28722,7 +28742,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -29062,7 +29082,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -29108,7 +29128,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -29384,7 +29404,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -29430,7 +29450,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -29703,7 +29723,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -29749,7 +29769,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -30025,7 +30045,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -30071,7 +30091,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -30333,7 +30353,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -30379,7 +30399,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -30645,7 +30665,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -30691,7 +30711,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -30956,7 +30976,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -31002,7 +31022,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -31272,7 +31292,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -31318,7 +31338,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -31567,7 +31587,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -31613,7 +31633,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -31862,7 +31882,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -31908,7 +31928,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -32233,7 +32253,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -32279,7 +32299,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -32824,7 +32844,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -32870,7 +32890,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -33129,7 +33149,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -33175,7 +33195,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -33387,7 +33407,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -33433,7 +33453,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -33730,7 +33750,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -33776,7 +33796,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -33950,7 +33970,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -33996,7 +34016,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -34414,7 +34434,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -34460,7 +34480,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -34838,7 +34858,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -34884,7 +34904,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -35261,7 +35281,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -35307,7 +35327,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -35522,7 +35542,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -35568,7 +35588,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -35844,7 +35864,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -35890,7 +35910,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -36244,7 +36264,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -36290,7 +36310,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -36387,7 +36407,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -36433,7 +36453,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -36843,7 +36863,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -36889,7 +36909,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -37145,7 +37165,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -37191,7 +37211,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -37484,7 +37504,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -37530,7 +37550,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -37797,7 +37817,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -37843,7 +37863,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -38107,7 +38127,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -38153,7 +38173,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -38426,7 +38446,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -38472,7 +38492,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -38739,7 +38759,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -38785,7 +38805,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -39044,7 +39064,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -39090,7 +39110,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -39489,7 +39509,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -39535,7 +39555,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -39876,7 +39896,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -39922,7 +39942,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -40257,7 +40277,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -40303,7 +40323,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -40498,7 +40518,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -40544,7 +40564,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -40767,7 +40787,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -40813,7 +40833,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -40910,7 +40930,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -40956,7 +40976,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -41571,7 +41591,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -41617,7 +41637,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -42059,7 +42079,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -42105,7 +42125,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -42656,7 +42676,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -42702,7 +42722,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -43079,7 +43099,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -43125,7 +43145,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -43340,7 +43360,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -43386,7 +43406,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -43755,7 +43775,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -43801,7 +43821,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -44019,7 +44039,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -44065,7 +44085,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -44359,7 +44379,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -44405,7 +44425,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -44753,7 +44773,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -44799,7 +44819,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -44896,7 +44916,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -44942,7 +44962,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -45223,7 +45243,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -45269,7 +45289,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -45545,7 +45565,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -45591,7 +45611,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -45858,7 +45878,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -45904,7 +45924,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -46153,7 +46173,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -46199,7 +46219,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -46313,6 +46333,26 @@
                             "minimum": 1,
                             "maximum": 50,
                             "example": 25
+                        }
+                    },
+                    {
+                        "description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"[Sorting](#description/sorting)\".\n",
+                        "name": "sort",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "id",
+                                    "id:asc",
+                                    "id:desc",
+                                    "name",
+                                    "name:asc",
+                                    "name:desc"
+                                ]
+                            }
                         }
                     }
                 ],
@@ -46678,7 +46718,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -46724,7 +46764,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -47101,7 +47141,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -47147,7 +47187,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -48465,7 +48505,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -48511,7 +48551,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -50230,7 +50270,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -50276,7 +50316,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -50653,7 +50693,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -50699,7 +50739,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -50914,7 +50954,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -50960,7 +51000,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -52104,7 +52144,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -52150,7 +52190,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -53327,7 +53367,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -53373,7 +53413,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -53587,7 +53627,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -53633,7 +53673,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -54043,7 +54083,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -54089,7 +54129,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -54339,7 +54379,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -54385,7 +54425,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -54650,7 +54690,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -54696,7 +54736,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -54987,7 +55027,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -55033,7 +55073,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -55314,7 +55354,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -55360,7 +55400,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -55636,7 +55676,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -55682,7 +55722,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -55949,7 +55989,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -55995,7 +56035,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -56266,7 +56306,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -56312,7 +56352,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -56834,7 +56874,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -56880,7 +56920,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -57151,7 +57191,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -57197,7 +57237,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -57442,7 +57482,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -57488,7 +57528,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -57733,7 +57773,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -57779,7 +57819,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -58024,7 +58064,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -58070,7 +58110,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -58315,7 +58355,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -58361,7 +58401,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -58639,7 +58679,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -58685,7 +58725,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -58930,7 +58970,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -58976,7 +59016,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -59221,7 +59261,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -59267,7 +59307,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -59512,7 +59552,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -59558,7 +59598,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -59833,7 +59873,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -59879,7 +59919,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -60124,7 +60164,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -60170,7 +60210,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -60427,7 +60467,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -60473,7 +60513,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -60718,7 +60758,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -60764,7 +60804,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -61011,7 +61051,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -61057,7 +61097,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -61302,7 +61342,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -61348,7 +61388,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -61607,7 +61647,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -61653,7 +61693,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -61864,7 +61904,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -61910,7 +61950,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -62215,7 +62255,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -62261,7 +62301,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -62446,7 +62486,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -62492,7 +62532,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -62657,7 +62697,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -62703,7 +62743,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -62911,7 +62951,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -62957,7 +62997,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -63054,7 +63094,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -63100,7 +63140,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -63553,7 +63593,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -63599,7 +63639,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -64282,7 +64322,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -64328,7 +64368,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -64705,7 +64745,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -64751,7 +64791,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -64966,7 +65006,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -65012,7 +65052,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -65308,7 +65348,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -65354,7 +65394,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -65719,7 +65759,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -65765,7 +65805,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -65862,7 +65902,7 @@
                     "204": {
                         "description": "Request succeeded."
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -65908,7 +65948,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -66322,7 +66362,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -66368,7 +66408,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -66651,7 +66691,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -66697,7 +66737,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -66963,7 +67003,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -67009,7 +67049,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -67254,7 +67294,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -67300,7 +67340,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -67565,7 +67605,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -67611,7 +67651,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -67870,7 +67910,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -67916,7 +67956,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -68634,7 +68674,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -68680,7 +68720,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -69658,7 +69698,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -69704,7 +69744,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -70316,7 +70356,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -70362,7 +70402,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -71004,7 +71044,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -71050,7 +71090,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -71285,7 +71325,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -71331,7 +71371,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -71444,7 +71484,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -71490,7 +71530,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -71867,7 +71907,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -71913,7 +71953,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -72128,7 +72168,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -72174,7 +72214,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -72539,7 +72579,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -72585,7 +72625,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -72820,7 +72860,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -72866,7 +72906,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -73151,7 +73191,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -73197,7 +73237,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -73453,7 +73493,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -73499,7 +73539,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -73761,7 +73801,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -73807,7 +73847,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -74066,7 +74106,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -74112,7 +74152,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -74519,7 +74559,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -74565,7 +74605,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -75032,7 +75072,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -75078,7 +75118,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -75343,7 +75383,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -75389,7 +75429,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -75704,7 +75744,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -75750,7 +75790,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -76023,7 +76063,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -76069,7 +76109,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -76367,7 +76407,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -76413,7 +76453,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -76715,7 +76755,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -76761,7 +76801,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -77080,7 +77120,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -77126,7 +77166,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -77455,7 +77495,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -77501,7 +77541,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -77820,7 +77860,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -77866,7 +77906,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
@@ -78186,7 +78226,7 @@
                             }
                         }
                     },
-                    "4xx": {
+                    "4XX": {
                         "description": "Request failed with a user error.",
                         "content": {
                             "application/json": {
@@ -78232,7 +78272,7 @@
                             }
                         }
                     },
-                    "5xx": {
+                    "5XX": {
                         "description": "Request failed with a server error.",
                         "content": {
                             "application/json": {
