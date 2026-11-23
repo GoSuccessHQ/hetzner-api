@@ -220,7 +220,7 @@ final class SpecTest extends TestCase
 
     public function testErrorEnvelope(): void
     {
-        $schema = SpecExample::at(SpecExample::operation('get_server')['operation'], 'responses', '4xx', 'content', 'application/json', 'schema');
+        $schema = SpecExample::at(SpecExample::operation('get_server')['operation'], 'responses', '4XX', 'content', 'application/json', 'schema');
 
         self::assertIsArray($schema);
         self::assertSame([], self::check($schema, 'error.code', 'R'));
